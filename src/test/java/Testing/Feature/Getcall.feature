@@ -3,7 +3,7 @@ Feature: get the details of user 2
   Background: Set URL
     * url 'https://reqres.in/'
 
-  @Now
+  @
   Scenario: Get the details of user 2
       Given path 'api/users'
       And param page = '2'
@@ -25,11 +25,11 @@ Feature: get the details of user 2
     Then match response == '#object'
     Then match response.name == 'morpheus'
     And match response.job == 'leader'
-    And match response.id == "690"
+#    And match response.id == "690"
     And match response.createdAt == "2021-05-18T10:44:03.296Z"
 
-  Scenario: Get the name of the user 2
-    Given path 'api/users'
-    
+#  Scenario: Get the name of the user 2
+#    Given path 'api/users'
+#
 
 
